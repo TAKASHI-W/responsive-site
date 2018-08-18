@@ -122,7 +122,12 @@ header {
       max-width: 100%;
       height: auto;
    }
-@media only screen and (max-width: 250px) {
+ .profile{
+  background-image: url("../images/img_profile.jpg");
+  width:100%;
+  height:500px;
+ }
+@media only screen and (max-width: 768px) {
 img { max-width: 100%; }
 }
 /* Contents
@@ -242,6 +247,8 @@ section h2
 ------------------------------------------------------------*/
 .btn {
     display: inline-block;
+    width:100%;
+    margin:20px 0px 20px 0px;
 }
 .btn a {
     display:block;  /* ブロック要素にしてリンク範囲を作る */
@@ -252,6 +259,7 @@ section h2
     line-height:46px;  /* ボタンの高さ＋テキストを中央（上下方向）にする */
     text-decoration:none;  /* リンクの下線（装飾）を消す */
     text-align:center;  /* テキストを中央寄せ */
+    margin:auto;
 }
 .btn a:hover {
     background:#ddd;  /* カーソルが乗った時の背景色 */
@@ -271,3 +279,18 @@ footer
 }
 
 
+
+
+@media only screen and (max-width: 768px) {
+ .profile{
+  height:250px;
+ }
+ #skills .container{
+flex-direction:column;
+}
+ #skills .skill-box{
+     width:100%;
+     margin:20px 0px 0px 0px;
+ }
+ 
+}
